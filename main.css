@@ -1,0 +1,198 @@
+:root {
+  --accent-color: #ff6600;
+  --accent-color-darked: #cc3300;
+  --background-color: #fff;
+  --text-color: #333;
+  --button-bg-color: #fcfcfc;
+  --button-bg-color-hover: #eee;
+  --button-border-color: #ccc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.шапкаОбертка {
+  background-color: #fcfcfc;
+  position: sticky;
+  top: 0;
+}
+
+.шапка {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.логотип {
+  font-size: 1.5rem;
+  background-color: red;
+  padding: 0.5rem;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.менюСайта {
+  display: flex;
+}
+
+.менюСайта .пунктМеню {
+  list-style-type: none;
+}
+
+.менюСайта .пунктМеню a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.менюСайта .пунктМеню a:hover {
+  color: var(--accent-color-darked);
+  transition: 0.5s;
+  text-decoration: none;
+  display: block;
+}
+
+.контентОбертка {
+  
+}
+
+.контент {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.редакторКода {
+  width: 80%;
+  margin: 0 auto;
+  resize:none;
+  height: auto;
+  display: block;
+  outline: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 0.5rem #3333;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+  overflow-y: auto;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+}
+
+button {
+  border: 1px solid var(--button-border-color);
+  background-color: var(--button-bg-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--button-bg-color-hover);
+}
+
+#копироватьВбуферОбменаБлок2 {
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 0.5rem;
+}
+
+.кодДокументацияОбертка {
+  width: 50%;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.описаниеДокументацияОбертка {
+  width: 50%;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-right: 1px solid #ccc;
+}
+
+.кодДокументация {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.подвалОбертка {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.подвал {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.подвал .логотип {
+  background-color: #fff;
+  color: #333;
+  display: inline-block;
+}
+
+.менюПодвал {
+  list-style-type: none;
+}
+
+.менюПодвал a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 0.5rem;
+}
+
+.менюПодвал li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.менюПодвал a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+.иконкаМенюподвал {
+  width: 32px;
+  height: 32px;
+  border-radius: 0.25rem;
+  background-size: 500% 500%;
+  background-image: url(./assets/social_icons.png);  
+  box-sizing: border-box;
+  border: 1px solid #555;
+
+}
+.вкИконка {
+  background-position: calc(1* 100% / 5) calc(0* 100% / 4);
+}
+
+.линекдИнИконка {
+  background-position: calc(2* 100% / 5) calc(1* 100% / 4);
+}
+
+.браузерИконка {
+  background-position: calc(0* 100% / 5) calc(4* 100% / 4);
+}
