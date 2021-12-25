@@ -228,3 +228,12 @@ button:hover {
 .блокСправки > div > div:nth-child(2) {
   width: 60%;
 }
+
+.предупреждение {
+  border: 1px solid #cc3300;
+  background-color: #ffcccc;
+  color: #cc3300;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
