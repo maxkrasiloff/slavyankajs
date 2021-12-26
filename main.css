@@ -1,11 +1,12 @@
 :root {
-  --accent-color: #ff6600;
-  --accent-color-darked: #cc3300;
+  --accent-color: #cc3300;
+  --accent-color-darked: #991100;
   --background-color: #fff;
   --text-color: #333;
   --button-bg-color: #fcfcfc;
   --button-bg-color-hover: #eee;
   --button-border-color: #ccc;
+  --default-box-shadow:  0 0 0.5rem #3333;
 }
 
 body {
@@ -14,10 +15,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a:link, a:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:link:hover {
+  color: var(--accent-color-darked);
+}
+
 .шапкаОбертка {
   background-color: #fcfcfc;
   position: sticky;
   top: 0;
+  box-shadow: var(--default-box-shadow);
 }
 
 .шапка {
@@ -121,12 +134,13 @@ button:hover {
   border-right: 1px solid #ccc;
 }
 
-.кодДокументация {
+.кодДокументация, .блокКода {
   background-color: #333;
   color: #fff;
   display: inline-block;
   padding: 1rem;
   border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem #3333;
 }
 
 .подвалОбертка {
@@ -195,18 +209,16 @@ button:hover {
 
 .блокСправки {
   display: block;
-  border-left: 1px solid #ccc;
   box-sizing: border-box;
 }
 
 
 .блокСправки > div {
   display: flex;
+  margin-bottom: 1.5rem;
 }
 
 .блокСправки > p {
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   margin: 0;
   box-sizing: border-box;
   padding: 0.5rem;
@@ -215,8 +227,6 @@ button:hover {
 
 .блокСправки > div > div {
   width: 50%;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   box-sizing: border-box;
   padding: 0.5rem;
 }
@@ -236,4 +246,22 @@ button:hover {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.блокСправки table {
+  border: 1px solid var(--accent-color);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.блокСправки tr {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.блокСправки td {
+  padding: 0.5rem;
+}
+
+.блокСправки tr td:first-child {
+  font-weight: bold;
 }
