@@ -314,3 +314,51 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   color: #fff;
   padding: 1rem;
 }
+
+@media screen and (max-width: 1280px) {
+  body {
+    /* word-break: break-all */
+  }
+    
+  .слайд {
+    left: 0;
+  }
+
+  .менюСайта {
+    display: none;
+  }
+  
+  .блокСправки > div {
+    flex-direction: column;
+  }
+
+  .шапкаОбертка {
+    width: 100%;
+  }
+  
+  .слайд h2 {
+    font-size: 1.5rem;
+  }
+  
+  .верхнееПредупреждение {
+    position: relative;
+  }
+
+  .слайд > div {
+    box-sizing: border-box;
+  }
+
+  .кодДокументация, .блокКода {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .блокСправки > div > div:nth-child(1), .блокСправки > div > div:nth-child(2)  {
+    width: 100%;
+  }
+  
+  .редакторКода {
+    max-width: 300px;
+  }
+}
