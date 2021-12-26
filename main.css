@@ -506,4 +506,23 @@ input {
     height: 2px;
     background-color: #ccc;
   }
+
+  .блокДокументации {
+    flex-direction: column;
+  }
+  
+  .менюДокументации {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  .содержимоеМенюДокументации {
+    overflow-x: auto;
+  }
+
+  .содержимоеДокументации {
+    margin-left: 0;
+    width: 100%;
+  }
 }
