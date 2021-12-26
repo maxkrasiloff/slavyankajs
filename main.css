@@ -316,10 +316,6 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
 }
 
 @media screen and (max-width: 1280px) {
-  body {
-    /* word-break: break-all */
-  }
-    
   .слайд {
     left: 0;
   }
