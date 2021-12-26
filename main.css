@@ -459,6 +459,7 @@ input {
     width: 100%;
     margin-left: 0;
     height: auto;
+    margin-bottom: 0;
   }
 
   .слайд > div {
@@ -524,5 +525,9 @@ input {
   .содержимоеДокументации {
     margin-left: 0;
     width: 100%;
+  }
+  
+  .контент {
+    padding: 0;
   }
 }
