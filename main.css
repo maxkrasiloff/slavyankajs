@@ -224,6 +224,7 @@ button:hover {
 .блокСправки > div {
   display: flex;
   margin-bottom: 1.5rem;
+  flex-direction: column;
 }
 
 .блокСправки > p {
@@ -234,18 +235,18 @@ button:hover {
 }
 
 .блокСправки > div > div {
-  width: 50%;
+  /* width: 50%; */
   box-sizing: border-box;
   padding: 0.5rem;
 }
 
-.блокСправки > div > div:nth-child(1) {
+/* .блокСправки > div > div:nth-child(1) {
   width: 40%;
 }
 
 .блокСправки > div > div:nth-child(2) {
   width: 60%;
-}
+} */
 
 .предупреждение {
   border: 1px solid #aa2200;
@@ -258,17 +259,19 @@ button:hover {
 }
 
 .блокСправки table {
-  border: 1px solid var(--accent-color);
-  border-collapse: collapse;
+  border: 1px solid #ccc;
   width: 100%;
+  border-spacing: 0;
+  border-radius: 0.5rem;
 }
 
 .блокСправки tr {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid #ccc;
 }
 
 .блокСправки td {
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .блокСправки tr td:first-child {
@@ -435,6 +438,24 @@ input {
 }
 
 .верхнееПредупреждение {
-  width: calc( 100% - 450px);
-  margin-left: 450px;
+  width: 60%;
+  margin-left: 40%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* .верхнееПредупреждение > div {
+  z-index: 10;
+} */
+
+.верхнееПредупреждение::before {
+  content: '';
+  border-top: 100px solid #cc3300;
+  border-left: 50px solid transparent;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  box-sizing: border-box;
 }
