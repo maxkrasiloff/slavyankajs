@@ -357,4 +357,9 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   .редакторКода {
     max-width: 300px;
   }
+
+  .блокСправки tr {
+    display: flex;
+    flex-direction: column;
+  }
 }
