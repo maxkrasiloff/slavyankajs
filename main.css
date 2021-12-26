@@ -322,6 +322,10 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   padding: 1rem;
 }
 
+.наВсюСтраницу {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1280px) {
   .слайд {
     left: 0;
@@ -369,4 +373,49 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
     display: flex;
     flex-direction: column;
   }
+}
+
+.менюДокументации {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc( 5rem + 2px);
+  left: 0;
+  bottom: 0;
+  width: 450px;
+  z-index: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  box-shadow: var(--default-box-shadow);
+  z-index: 10;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.менюДокументации > * {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.менюДокументации a, .менюДокументации a:hover {
+  color: #333
+}
+
+.блокДокументации {
+  display: flex;
+  
+}
+
+.содержимоеДокументации {
+  width: calc( 100% - 450px);
+  margin-left: 450px;
+}
+
+.блокСправки a {
+  position: relative;
+  margin-top: 250px;
+  height: 30px;
+  width: 30px;
+  top: -6rem;
 }
