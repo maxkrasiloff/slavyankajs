@@ -13,6 +13,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a:link, a:visited {
@@ -70,6 +73,10 @@ a:link:hover {
   transition: 0.5s;
   text-decoration: none;
   display: block;
+}
+
+.контентОбертка {
+  flex-grow: 1;
 }
 
 .контент {
@@ -270,7 +277,7 @@ button:hover {
 
 .слайд, .фонСлайда {
   width: 96vw;
-  min-height: calc( 100vh - 5rem);
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +291,7 @@ button:hover {
 .фонСлайда {
   position: absolute;
   z-index: -1;
-  top: 5rem;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -305,7 +312,7 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
 }
 
 .верхнееПредупреждение {
-  position: absolute;
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   border: 0;
