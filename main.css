@@ -329,54 +329,6 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   max-width: 100%;
 }
 
-@media screen and (max-width: 1280px) {
-  .слайд {
-    left: 0;
-  }
-
-  .менюСайта {
-    display: none;
-  }
-  
-  .блокСправки > div {
-    flex-direction: column;
-  }
-
-  .шапкаОбертка {
-    width: 100%;
-  }
-  
-  .слайд h2 {
-    font-size: 1.5rem;
-  }
-  
-  .верхнееПредупреждение {
-    position: relative;
-  }
-
-  .слайд > div {
-    box-sizing: border-box;
-  }
-
-  .кодДокументация, .блокКода {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .блокСправки > div > div:nth-child(1), .блокСправки > div > div:nth-child(2)  {
-    width: 100%;
-  }
-  
-  .редакторКода {
-    max-width: 300px;
-  }
-
-  .блокСправки tr {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .менюДокументации {
   display: flex;
@@ -458,4 +410,96 @@ input {
   left: -50px;
   height: 100%;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1280px) {
+  .слайд {
+    left: 0;
+  }
+
+  .менюСайта {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    margin-left: 0;
+    padding-left: 0;
+    box-shadow: 0 4px 3px #3333;
+  }
+
+  .менюСайта li {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #fffc;
+  }
+  
+  .блокСправки > div {
+    flex-direction: column;
+  }
+
+  .шапкаОбертка {
+    width: 100%;
+  }
+  
+  .слайд h2 {
+    font-size: 1.5rem;
+  }
+  
+  .верхнееПредупреждение {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .слайд > div {
+    box-sizing: border-box;
+  }
+
+  .кодДокументация, .блокКода {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .блокСправки > div > div:nth-child(1), .блокСправки > div > div:nth-child(2)  {
+    width: 100%;
+  }
+  
+  .редакторКода {
+    max-width: 300px;
+  }
+
+  .блокСправки tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .фонСлайда {
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+  }
+
+  .кнопкаМеню {
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  
+  .кнопкаМеню > div {
+    height: 2px;
+    background-color: #ccc;
+  }
 }
