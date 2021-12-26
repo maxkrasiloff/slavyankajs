@@ -392,7 +392,12 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   overflow-y: auto;
 }
 
-.менюДокументации > * {
+.содержимоеМенюДокументации {
+  display: flex;
+  flex-direction: column;
+}
+
+.содержимоеМенюДокументации > * {
   padding: 0.5rem;
   border-bottom: 1px solid #ccc;
   color: #333;
@@ -412,10 +417,24 @@ background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%
   margin-left: 450px;
 }
 
-.блокСправки a {
+.блокСправки > p a {
   position: relative;
   margin-top: 250px;
   height: 30px;
   width: 30px;
   top: -6rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  outline: none;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.верхнееПредупреждение {
+  width: calc( 100% - 450px);
+  margin-left: 450px;
 }
