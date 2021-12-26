@@ -31,6 +31,7 @@ a:link:hover {
   position: sticky;
   top: 0;
   box-shadow: var(--default-box-shadow);
+  z-index: 100;
 }
 
 .шапка {
@@ -240,12 +241,13 @@ button:hover {
 }
 
 .предупреждение {
-  border: 1px solid #cc3300;
-  background-color: #ffcccc;
-  color: #cc3300;
+  border: 1px solid #aa2200;
+  background-color: #ffeeee;
+  color: #aa2200;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  box-shadow: var(--default-box-shadow);
 }
 
 .блокСправки table {
@@ -264,4 +266,51 @@ button:hover {
 
 .блокСправки tr td:first-child {
   font-weight: bold;
+}
+
+.слайд, .фонСлайда {
+  width: 96vw;
+  min-height: calc( 100vh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: calc(-50vw + 640px + 2vw);
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.фонСлайда {
+  position: absolute;
+  z-index: -1;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgb(205,107,69);
+background: linear-gradient(135deg, rgba(205,107,69,1) 0%, rgba(211,129,85,1) 0%, rgba(221,162,109,1) 10%, rgba(217,167,81,1) 25%, rgba(255,200,241,1) 100%);
+}
+.слайд > div {
+  background-color: #fff7;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--default-box-shadow);
+}
+.слайд h2 {
+  font-size: 3rem;
+  text-shadow: 0 0 3px #333;
+}
+
+.верхнееПредупреждение {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #cc3300;
+  border-radius: 0;
+  color: #fff;
+  padding: 1rem;
 }
